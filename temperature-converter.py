@@ -5,11 +5,22 @@ while True:
     einheit = einheit.upper()
     
     if einheit == "C":
-        temperatur = float(input("Bitte Temperatur eingeben: "))
-        print(f"{temperatur} Grad Celsius entspricht {temperatur*1.8+32} Grad Fahrenheit.")
+        while True:
+            try:
+                temperatur = float(input("Bitte Temperatur eingeben: "))
+                print(f"{temperatur} Grad Celsius entspricht {temperatur*1.8+32} Grad Fahrenheit.")
+                break
+            except ValueError:
+                print("Du hast keine gültige Eingabe gemacht. Bitte nutze ausschliesslich Ziffern und einen Punkt als Komma.")
+                
     elif einheit == "F":
-        temperatur = float(input("Bitte Temperatur eingeben: "))
-        print(f"{temperatur} Grad Fahrenheit entspricht {(temperatur-32)/1.8} Grad Celsius.")
+        while True:
+            try:
+                temperatur = float(input("Bitte Temperatur eingeben: "))
+                print(f"{temperatur} Grad Fahrenheit entspricht {(temperatur-32)/1.8} Grad Celsius.")
+                break
+            except ValueError:
+                print("Du hast keine gültige Eingabe gemacht. Bitte nutze ausschliesslich Ziffern und einen Punkt als Komma.")
     else:
         print("Du hast keine gültige Eingabe gemacht. Bitte tippe C für Celsius oder F für Fahrenheit!")
     
