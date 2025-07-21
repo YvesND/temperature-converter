@@ -14,3 +14,10 @@ My very first program - a Python based temperature converter (C/F) with input va
 ## Usage
   
 Just run the program and follow the instructions.
+
+
+## Changelog
+
+**Version 2**  
+- Added input validation for numeric temperature values to prevent crashes.  
+- Improved robustness and error handling.
